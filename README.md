@@ -19,7 +19,7 @@ metadata:
 vpc:
   subnets:
     private:
-      {{ call .Lookup.Ec2.Vpcs "Tags:environment" "Value:dev" }}
+      {{ call .Lookup.ec2.Vpcs "Tags:environment" "Value:dev" }}
       
 managedNodeGroups:
   - name: managed-ng-1
